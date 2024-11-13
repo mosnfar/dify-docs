@@ -42,8 +42,8 @@
     * [模板转换](guides/workflow/node/template.md)
     * [文档提取器](guides/workflow/node/doc-extractor.md)
     * [列表操作](guides/workflow/node/list-operator.md)
-    * [变量聚合](guides/workflow/node/variable-assigner.md)
-    * [变量赋值](guides/workflow/node/variable-assignment.md)
+    * [变量聚合](guides/workflow/node/variable-aggregator.md)
+    * [变量赋值](guides/workflow/node/variable-assigner.md)
     * [迭代](guides/workflow/node/iteration.md)
     * [参数提取](guides/workflow/node/parameter-extractor.md)
     * [HTTP 请求](guides/workflow/node/http-request.md)
@@ -127,6 +127,7 @@
   * [AI Agent 实战：搭建个人在线旅游助手](workshop/basic/travel-assistant.md)
 * [中级](workshop/intermediate/README.md)
   * [使用文件上传搭建文章理解助手](workshop/intermediate/article-reader.md)
+  * [使用知识库搭建智能客服机器人](workshop/intermediate/customer-service-bot.md)
   * [ChatFlow 实战：搭建 Twitter 账号分析助手](workshop/intermediate/twitter-chatflow.md)
 
 ## 社区 <a href="#community" id="community"></a>
@@ -166,6 +167,7 @@
   * [如何连接 AWS Bedrock 知识库？](learn-more/use-cases/how-to-connect-aws-bedrock.md)
 * [扩展阅读](learn-more/extended-reading/README.md)
   * [什么是 LLMOps？](learn-more/extended-reading/what-is-llmops.md)
+  * [什么是数组变量？](learn-more/extended-reading/what-is-array-variable.md)
   * [检索增强生成（RAG）](learn-more/extended-reading/retrieval-augment/README.md)
     * [混合检索](learn-more/extended-reading/retrieval-augment/hybrid-search.md)
     * [重排序](learn-more/extended-reading/retrieval-augment/rerank.md)

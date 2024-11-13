@@ -98,7 +98,7 @@ FileNotFoundError: File not found
 
 ### 11. ローカル展開バージョンのデータセットでドキュメントをアップロードする際のサイズと数量制限を解決する方法は？
 
-公式ウェブサイトの[環境変数](../../getting-started/install-self-hosted/environments)を参照してください。
+公式Webサイトの[環境変数](../../getting-started/install-self-hosted/environments)を参照してください。
 
 ### 12. ローカル展開バージョンでメール経由でメンバーを招待する方法は？
 
@@ -110,7 +110,7 @@ FileNotFoundError: File not found
 Can't load tokenizer for 'gpt2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'gpt2' is the correct path to a directory containing all relevant files for a GPT2TokenizerFast tokenizer.
 ```
 
-設定に関しては、公式ウェブサイトの[環境変数](../../getting-started/install-self-hosted/environments)や関連する[Issue](https://github.com/langgenius/dify/issues/1261)を参照してください。
+設定に関しては、公式Webサイトの[環境変数](../../getting-started/install-self-hosted/environments)や関連する[Issue](https://github.com/langgenius/dify/issues/1261)を参照してください。
 
 ### 14. ローカル展開バージョンでポート80の競合を解消する方法
 
@@ -126,7 +126,7 @@ OpenAI TTSはオーディオストリームの分割を実装しているため�
 
 **Windows:**
 
-1. [FFmpeg公式ウェブサイト](https://ffmpeg.org/download.html)を訪れ、事前にコンパイルされたWindows用の共有ライブラリをダウンロードします。
+1. [FFmpeg公式Webサイト](https://ffmpeg.org/download.html)を訪れ、事前にコンパイルされたWindows用の共有ライブラリをダウンロードします。
 2. FFmpegフォルダをダウンロードして展開し、"ffmpeg-20200715-51db0a4-win64-static"のようなフォルダが生成されます。
 3. 展開したフォルダを任意の場所に移動します。例：C:\Program Files\。
 4. FFmpegのbinディレクトリの絶対パスをシステムの環境変数に追加します。
@@ -233,3 +233,7 @@ docker ps -q | xargs -n 1 docker inspect --format '{{ .Name }}: {{range .Network
 
 `.env`構成ファイルで`CSP_WHITELIST`パラメータを見つけて、製品の使用に関連するすべての URL や API リクエスト アドレスなど、許可できるドメイン名を入力します。
 この動きは、潜在的な XSS 攻撃を減らすのに役立ちます。 CSP に関する推奨事項の詳細については、[コンテンツ セキュリティ ポリシー](https://developer.mozilla.org/ja/docs/Web/HTTP/CSP) を参照してください。
+
+### 22. APIサービスのポート番号を変更する方法
+
+API サービスのポートは、Dify プラットフォームで使用されるポートと一致します。`docker-compose.yaml` ファイルの `nginx` 設定を変更することで、実行中のポートを再指定することができます。

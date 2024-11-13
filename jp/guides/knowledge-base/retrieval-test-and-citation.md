@@ -6,14 +6,14 @@ Difyナレッジベースには、異なる検索方法とパラメータ設定�
 
 <figure><img src="../../.gitbook/assets/Retrieval-testing.png" alt=""><figcaption><p>リコールテスト</p></figcaption></figure>
 
-ソーステキスト入力欄の右上のアイコンをクリックすると、現在のナレッジベースの検索方法と具体的なパラメータを変更できます。**保存後はリコールテストのデバッグ中のみ有効です**。リコールテストを完了し、ナレッジベースの検索パラメータの変更を確認する際には、[ナレッジベース設定 > 検索設定](create-knowledge-and-upload-documents/#id-6-jian-suo-she-ding)で変更を行う必要があります。
+ソーステキスト入力欄の右上のアイコンをクリックすると、現在のナレッジベースの検索方法と具体的なパラメータを変更できます。**保存後はリコールテストのデバッグ中のみ有効です**。リコールテストを完了し、ナレッジベースの検索パラメータの変更を確認する際には、[ナレッジベース設定 > 検索設定](./create-knowledge-and-upload-documents/#id-6-jian-suo-she-ding)で変更を行う必要があります。
 
 <figure><img src="../../.gitbook/assets/Retrieval-testing-setting.png" alt=""><figcaption><p>リコールテスト-検索設定</p></figcaption></figure>
 
 **リコールテストの推奨ステップ：**
 
 1. 一般的なユーザーの質問をカバーするテストケース/テスト問題集を設計・整理する。
-2. 適切な検索戦略を選択する：ベクトル検索/全文検索/ハイブリッド検索。各検索方法の利点と欠点については、追加情報[検索拡張生成（RAG）](../../learn-more/extended-reading/retrieval-augment/)を参照してください。
+2. 適切な検索戦略を選択する：ベクトル検索/全文検索/ハイブリッド検索。各検索方法の利点と欠点については、拡張読み物[検索拡張生成（RAG）](../../learn-more/extended-reading/retrieval-augment/)を参照してください。
 3. リコールパラグラフ数（TopK）とリコールスコア閾値（Score）をデバッグする。アプリケーションシナリオやドキュメント自体の品質に応じて適切なパラメータの組み合わせを選択する必要があります。
 
 **TopK値とリコールスコア閾値（Score）の設定方法**
@@ -31,4 +31,4 @@ Difyナレッジベースには、異なる検索方法とパラメータ設定�
 
 機能を有効にすると、大規模言語モデルが質問に回答する際にナレッジベースからの内容を引用した場合、返信内容の下に具体的な引用段落情報を確認できます。これには**元のパラグラフテキスト、パラグラフ番号、マッチ度**などが含まれます。引用段落上部の**ナレッジベースにジャンプ**をクリックすると、開発者がデバッグ編集を行いやすいように、そのパラグラフが含まれるナレッジベースのパラグラフリストに簡単にアクセスできます。
 
-<figure><img src="../../.gitbook/assets/view-citation-informatio.png" alt=""><figcaption><p>返信内容の引用情報を確認する</p></figcaption></figure>
+<figure><img src="../../../img/view-citation-information.png" alt=""><figcaption><p>返信内容の引用情報を確認する</p></figcaption></figure>
