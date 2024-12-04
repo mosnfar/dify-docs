@@ -8,6 +8,7 @@
 * [Dify Community](getting-started/install-self-hosted/README.md)
   * [Deploy with Docker Compose](getting-started/install-self-hosted/docker-compose.md)
   * [Start with Local Source Code](getting-started/install-self-hosted/local-source-code.md)
+  * [Deploy with aaPanel](getting-started/install-self-hosted/bt-panel.md)
   * [Start Frontend Docker Container Separately](getting-started/install-self-hosted/start-the-frontend-docker-container.md)
   * [Environment Variables Explanation](getting-started/install-self-hosted/environments.md)
   * [FAQs](getting-started/install-self-hosted/faqs.md)
@@ -70,7 +71,6 @@
   * [Sync Data from Notion](guides/knowledge-base/sync-from-notion.md)
   * [Sync Data from Website](guides/knowledge-base/sync-from-website.md)
   * [Maintain Knowledge Base via API](guides/knowledge-base/maintain-dataset-via-api.md)
-  * [External Data Tool](guides/knowledge-base/external-data-tool.md)
   * [Connect to an External Knowledge Base](guides/knowledge-base/connect-external-knowledge.md)
   * [External Knowledge API](guides/knowledge-base/external-knowledge-api-documentation.md)
 * [Tools](guides/tools/README.md)
@@ -84,6 +84,7 @@
     * [Dall-e](guides/tools/tool-configuration/dall-e.md)
     * [Perplexity Search](guides/tools/tool-configuration/perplexity.md)
     * [AlphaVantage](guides/tools/tool-configuration/alphavantage.md)
+    * [Youtube](guides/tools/tool-configuration/youtube.md)
     * [SearXNG](guides/tools/tool-configuration/searxng.md)
     * [Serper](guides/tools/tool-configuration/serper.md)
     * [SiliconFlow (Flux AI Supported)](guides/tools/tool-configuration/siliconflow.md)
@@ -96,9 +97,9 @@
   * [Embedding In Websites](guides/application-publishing/embedding-in-websites.md)
   * [Developing with APIs](guides/application-publishing/developing-with-apis.md)
   * [Re-develop Based on Frontend Templates](guides/application-publishing/based-on-frontend-templates.md)
-* [Annotation](guides/biao-zhu/README.md)
-  * [Logs and Annotation](guides/biao-zhu/logs.md)
-  * [Annotation Reply](guides/biao-zhu/annotation-reply.md)
+* [Annotation](guides/annotation/README.md)
+  * [Logs and Annotation](guides/annotation/logs.md)
+  * [Annotation Reply](guides/annotation/annotation-reply.md)
 * [Monitoring](guides/monitoring/README.md)
   * [Data Analysis](guides/monitoring/analysis.md)
   * [Integrate External Ops Tools](guides/monitoring/integrate-external-ops-tools/README.md)
@@ -127,6 +128,7 @@
   * [How to Build an AI Image Generation App](workshop/basic/build-ai-image-generation-app.md)
 * [Intermediate](workshop/intermediate/README.md)
   * [Build An Article Reader Using File Upload](workshop/intermediate/article-reader.md)
+  * [Building a Smart Customer Service Bot Using a Knowledge Base](workshop/intermediate/customer-service-bot.md)
   * [Generating analysis of Twitter account using Chatflow Agent](workshop/intermediate/twitter-chatflow.md)
 
 ## Community
@@ -148,6 +150,7 @@
   * [Integrate Local Models Deployed by LocalAI](development/models-integration/localai.md)
   * [Integrate Local Models Deployed by Ollama](development/models-integration/ollama.md)
   * [Integrate Models on LiteLLM Proxy](development/models-integration/litellm.md)
+  * [Integrating with GPUStack for Local Model Deployment](development/models-integration/gpustack.md)
 
 ## Learn More
 

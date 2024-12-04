@@ -20,7 +20,7 @@
 git clone https://github.com/langgenius/dify.git
 ```
 
-Before enabling business services, we need to first deploy PostgresSQL / Redis / Weaviate (if not locally available). We can start them with the following commands:
+Before enabling business services, we need to first deploy PostgreSQL / Redis / Weaviate (if not locally available). We can start them with the following commands:
 
 ```Bash
 cd docker
@@ -37,18 +37,18 @@ docker compose -f docker-compose.middleware.yaml up -d
 
 #### Installation of the basic environment:
 
-Server startup requires Python 3.10.x. It is recommended to use [pyenv](https://github.com/pyenv/pyenv) for quick installation of the Python environment.
+Server startup requires Python 3.11 or 3.12. It is recommended to use [pyenv](https://github.com/pyenv/pyenv) for quick installation of the Python environment.
 
 To install additional Python versions, use pyenv install.
 
 ```Bash
-pyenv install 3.10
+pyenv install 3.11
 ```
 
-To switch to the "3.10" Python environment, use the following command:
+To switch to the "3.11" Python environment, use the following command:
 
 ```Bash
-pyenv global 3.10
+pyenv global 3.11
 ```
 
 #### Follow these steps :
@@ -76,7 +76,7 @@ pyenv global 3.10
     Dify API service uses [Poetry](https://python-poetry.org/docs/) to manage dependencies. You can execute `poetry shell` to activate the environment.
 
     ```
-    poetry env use 3.10
+    poetry env use 3.11
     poetry install
     ```
 

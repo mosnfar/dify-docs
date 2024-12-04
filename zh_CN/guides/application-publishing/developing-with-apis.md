@@ -9,7 +9,7 @@ Dify 基于“**后端即服务**”理念为所有应用提供了 API，为 AI 
 * 对 LLM 供应商的基础能力进行了良好封装
 * 随时切换 LLM 供应商，并对 LLM 的密钥进行集中管理
 * 在可视化的界面中运营你的应用，例如分析日志、标注及观察用户活跃
-* 持续为应用提供更多工具能力、插件能力和数据集
+* 持续为应用提供更多工具能力、插件能力和知识库
 
 #### 如何使用
 
@@ -23,7 +23,7 @@ Dify 基于“**后端即服务**”理念为所有应用提供了 API，为 AI 
 在最佳实践中，API 密钥应通过后端调用，而不是直接以明文暴露在前端代码或请求中，这样可以防止你的应用被滥用或攻击。
 {% endhint %}
 
-你可以为一个应用**创建多个访问凭据**，以实现交付给不同的用户或开发者。这意味着 API 的使用者虽然使用了应用开发者提供的 AI 能力，但背后的 Promp 工程、数据集和工具能力是经封装的。
+你可以为一个应用**创建多个访问凭据**，以实现交付给不同的用户或开发者。这意味着 API 的使用者虽然使用了应用开发者提供的 AI 能力，但背后的 Promp 工程、知识库和工具能力是经封装的。
 
 #### 文本生成型应用
 
@@ -78,9 +78,9 @@ print(response.text)
 
 #### `conversation_id` 的注意事项：
 
-- **生成 `conversation_id`：**开始新对话时，请将 `conversation_id` 字段留空。系统将生成并返回一个新的 `conversation_id`，未来的交互中会使用该 `conversation_id` 继续对话。
-- **处理现有会话中的 `conversation_id`：**生成 `conversation_id` 后，对 API 的未来调用应包含此 `conversation_id`，以确保与 Dify 机器人的对话连续性。传递上一个 `conversation_id` 时，将忽略任何新的 `inputs`，仅处理正在进行的对话的 `query`。
-- **管理动态变量：**如果在会话期间需要修改逻辑或变量，您可以使用会话变量（特定于会话的变量）来调整bot的行为或回应。
+- **生成 `conversation_id`：** 开始新对话时，请将 `conversation_id` 字段留空。系统将生成并返回一个新的 `conversation_id`，未来的交互中会使用该 `conversation_id` 继续对话。
+- **处理现有会话中的 `conversation_id`：** 生成 `conversation_id` 后，对 API 的未来调用应包含此 `conversation_id`，以确保与 Dify 机器人的对话连续性。传递上一个 `conversation_id` 时，将忽略任何新的 `inputs`，仅处理正在进行的对话的 `query`。
+- **管理动态变量：** 如果在会话期间需要修改逻辑或变量，你可以使用会话变量（特定于会话的变量）来调整 bot 的行为或回应。
 
 你可以在**应用 -> 访问 API** 中找到该应用的 API 文档与范例请求。
 
@@ -123,7 +123,7 @@ data = {
 
 response = requests.post(url, headers=headers, data=json.dumps(data))
 
-print(response.json())
+print(response.text)
 ```
 {% endtab %}
 {% endtabs %}

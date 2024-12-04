@@ -20,7 +20,7 @@ Clone Dify 代码：
 git clone https://github.com/langgenius/dify.git
 ```
 
-在启用业务服务之前，我们需要先部署 PostgresSQL / Redis / Weaviate（如果本地没有的话），可以通过以下命令启动：
+在启用业务服务之前，我们需要先部署 PostgreSQL / Redis / Weaviate（如果本地没有的话），可以通过以下命令启动：
 
 ```Bash
 cd docker
@@ -37,19 +37,19 @@ docker compose -f docker-compose.middleware.yaml up -d
 
 #### 安装基础环境
 
-服务器启动需要 Python 3.10.x。建议使用 [pyenv](https://github.com/pyenv/pyenv) 快速安装 Python 环境。
+服务器启动需要 Python 3.11 或 3.12。建议使用 [pyenv](https://github.com/pyenv/pyenv) 快速安装 Python 环境。
 
 要安装其他 Python 版本，请使用 `pyenv install`。
 
 ```Bash
-pyenv install 3.10
+pyenv install 3.11
 ```
 
-要切换到 "3.10" Python 环境，请使用以下命令:
+要切换到 "3.11" Python 环境，请使用以下命令:
 
 
 ```Bash
-pyenv global 3.10
+pyenv global 3.11
 ```
 
 #### 启动步骤
@@ -71,10 +71,10 @@ pyenv global 3.10
     ```
 4.  安装依赖包
 
-    Dify API 服务使用 [Poetry](https://python-poetry.org/docs/) 来管理依赖。您可以执行 `poetry shell` 来激活环境。
+    Dify API 服务使用 [Poetry](https://python-poetry.org/docs/) 来管理依赖。你可以执行 `poetry shell` 来激活环境。
 
     ```
-    poetry env use 3.10
+    poetry env use 3.11
     poetry install
     ```
 
@@ -106,7 +106,7 @@ pyenv global 3.10
     ```
 7.  启动 Worker 服务
 
-    用于消费异步队列任务，如数据集文件导入、更新数据集文档等异步操作。 Linux / MacOS 启动：
+    用于消费异步队列任务，如知识库文件导入、更新知识库文档等异步操作。 Linux / MacOS 启动：
 
     ```
     celery -A app.celery worker -P gevent -c 1 -Q dataset,generation,mail,ops_trace --loglevel INFO

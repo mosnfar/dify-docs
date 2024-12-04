@@ -7,12 +7,12 @@
 <figure><img src="../../.gitbook/assets/image (173).png" alt=""><figcaption><p>创建知识库</p></figcaption></figure>
 
 * 如果你已经准备好了文件，可以从上传文件开始;
-* 如果你还没有准备好文档，可以先创建一个空数据集;
+* 如果你还没有准备好文档，可以先创建一个空知识库;
 
 <figure><img src="../../.gitbook/assets/image (191).png" alt=""><figcaption><p>创建知识库</p></figcaption></figure>
 
 {% hint style="info" %}
-如果你在创建数据集时选择了使用外部数据源，该知识库的类型不可更改。这是为了防止单一知识库存在多数据源而造成的管理困难。如果你需要使用多个数据源，建议创建多个知识库。
+如果你在创建知识库时选择了使用外部数据源，该知识库的类型不可更改。这是为了防止单一知识库存在多数据源而造成的管理困难。如果你需要使用多个数据源，建议创建多个知识库。
 {% endhint %}
 
 ***
@@ -65,7 +65,7 @@
 
 在 RAG 的生产级应用中，为了获得更好的数据召回效果，需要对多源数据进行预处理和清洗，即 ETL （_extract, transform, load_）。为了增强非结构化/半结构化数据的预处理能力，Dify 支持了可选的 ETL 方案：**Dify ETL** 和[ ](https://docs.unstructured.io/welcome)[**Unstructured ETL** ](https://unstructured.io/)。
 
-> Unstructured 能够高效地提取并转换您的数据为干净的数据用于后续的步骤。
+> Unstructured 能够高效地提取并转换你的数据为干净的数据用于后续的步骤。
 
 Dify 各版本的 ETL 方案选择：
 
@@ -150,7 +150,7 @@ Rerank 模型：你可以在“模型供应商”页面配置 Rerank 模型的 A
 
   仅启用语义检索模式。借助 Embedding 模型，即便知识库中没有出现查询中的确切词汇，也能通过计算向量距离的方式提高搜索的深度，返回正确内容。此外，当需要处理多语言内容时，语义检索能够捕捉不同语言之间的意义转换，提供更加准确的跨语言搜索结果。
 
-  > 语义检索指的是比对用户问题与知识库内容中的向量距离。距离越近，匹配的概率越大。参考阅读：[《Dify：Embedding 技术与 Dify 数据集设计/规划》](https://mp.weixin.qq.com/s/vmY_CUmETo2IpEBf1nEGLQ)。
+  > 语义检索指的是比对用户问题与知识库内容中的向量距离。距离越近，匹配的概率越大。参考阅读：[《Dify：Embedding 技术与 Dify 知识库设计/规划》](https://mp.weixin.qq.com/s/vmY_CUmETo2IpEBf1nEGLQ)。
 
 - **关键词值为 1**
   
